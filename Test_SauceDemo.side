@@ -1,0 +1,117 @@
+{
+  "id": "12136135-abe4-4a2e-bdf3-579ceffed921",
+  "version": "2.0",
+  "name": "Test_SauceDemo",
+  "url": "https://www.saucedemo.com",
+  "tests": [{
+    "id": "64d418a4-d023-4045-8ee3-7ffa9935ff42",
+    "name": "Test_Login",
+    "commands": [{
+      "id": "e5fba8ea-800b-49f4-a2f8-176fe1c1e9e5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6595d53a-f904-4ed0-a580-6e20afe4207d",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "782x717",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "53675d11-3025-48db-80d9-4c51343af322",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dab0b676-1a26-43be-a1a7-c84469caecad",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "standard_user"
+    }, {
+      "id": "c1855edb-e074-4147-a02c-a0bb66a19e99",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9061da3e-24fd-4910-be84-332390ab73e1",
+      "comment": "",
+      "command": "type",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "secret_sauce"
+    }, {
+      "id": "c1e4669e-acb8-4322-bc19-f003f607dcb3",
+      "comment": "",
+      "command": "click",
+      "target": "css=*[data-test=\"login-button\"]",
+      "targets": [
+        ["css=*[data-test=\"login-button\"]", "css:data-attr"],
+        ["id=login-button", "id"],
+        ["name=login-button", "name"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ec2b5069-a1f6-4092-9916-4e956710310f",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.title",
+      "targets": [],
+      "value": "Products"
+    }]
+  }],
+  "suites": [{
+    "id": "2d95d9d0-23db-4d4c-9588-8bc3a48f068b",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["64d418a4-d023-4045-8ee3-7ffa9935ff42"]
+  }],
+  "urls": ["https://www.saucedemo.com/"],
+  "plugins": []
+}
